@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Wister's Terminal</title>
+        <link rel="stylesheet" href="/static/cui_general.css" type="text/css">
+        <link rel="icon" type="image/png" href="/static/wistericon.png">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    </head>
+    <body>
+        <div id="app">
+        <div id="terminal">
+            <div>
+            <start></start>
+            </div>
+            <div id="results">
+                <result v-for="com in comres" v-bind:key="com.id" v-bind:com="com"></result>
+            </div><!--
+                隙間をなくすための致し方ない(可読性の)犠牲
+            --><cmd class="formline" v-on:cmdroute="keyin($event)"></cmd>
+        </div>
+        </div>
+        
+        <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.5.21/dist/vue.js" type="text/javascript"></script> -->
+        
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+        <script src="/script/cui_general.js" type="text/javascript"></script>
+    </body>
+</html>

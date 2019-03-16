@@ -1,0 +1,17 @@
+{
+    "help": {
+        "res": "help: Show commands\nabout: Show about Wister\njump: Redirect other page",
+        "about": "No args: Show ALL\nName: Show Name\nAge: Show Age\nTwitter: Show Twitter ID",
+        "jump": "gui-home: jump GUIPage(Under construction)\ngithub: jump Wister's github"
+    },
+    "about" :{
+        "Name": "Name: Wister",
+        "Age": "Age: 17",
+        "Twitter": "Twitter: <a href=\"https://twitter.com/wister_fl\">@wister_fl</a>"
+    },
+    "jump" :{
+        "res": "Specify jump point",
+        "gui-home": "/",
+        "github": "https://github.com/WisterViolet"
+    }
+}
